@@ -10,6 +10,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         btnRoll.setOnClickListener{
             rollDice()
+
         }
     }
 
@@ -25,5 +26,6 @@ class MainActivity : AppCompatActivity() {
             6 -> imageView.setImageResource(R.drawable.dice_6)
         }
         imageView.contentDescription = diceRoll.toString()
+        result.text = diceRoll.toString()
     }
 }
